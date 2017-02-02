@@ -1,11 +1,9 @@
 const value = process.argv
-let newValue
-let newArr = []
+let newArray = []
 function values (array){
 	for(let i = 2; i < array.length; i++){
-		newValue = Number(array[i]) + 2
-		newArr.push(newValue)
+		newArray[i-2] = Number(array[i]) + 2
 	}
 }
 values(value)
-console.log(newArr)
+console.log(newArray)
